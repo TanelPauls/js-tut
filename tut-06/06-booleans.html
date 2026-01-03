@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    <script>
+        false
+        true
+        console.log(typeof true);
+        
+        console.log(5>3);
+        console.log(5>8);        
+        console.log(5>8-8); // now true, since calculations have priority        
+         
+        console.log(5=='5.00'); //these are equal
+
+        console.log(5==='5.00'); //these are *not* equal
+
+        if(false){
+            console.log('hello');
+        } else {
+            console.log('else')
+        };
+
+        if(30>=18){
+            console.log('You cand drive.')
+        } else {
+            console.log('You can not drive.')
+        };
+
+        console.log(!0); //true
+
+        console.log('text' / 5); //NaN
+
+        let variable1;
+        console.log(variable1); // undefined
+
+        const result=true ? 'truthy' : 'falsy';
+        console.log(result);
+
+        false && console.log('hello'); //guard operator, stop early if first part is already false
+
+        const message = false && 'hello';
+        console.log(message);
+        
+        const currency = 'EUR' || 'USD';
+        console.log(currency);
+
+        const currency2 = undefined || 'USD';
+        console.log(currency2);
+        
+
+
+</script>
+</body>
+</html>
